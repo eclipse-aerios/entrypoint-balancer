@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          orion-ld:
+            url: "http://orion-ld-broker:1026/ngsi-ld/v1/"
+            connect-timeout: 20000
+            read-timeout: 20000
+            logger-level: basic
+          hlo-fe:
+            url: "http://hlo-fe-service:8081"
+            connect-timeout: 10000
+            read-timeout: 10000
+            logger-level: basic
+
+load-balancer:
+  max-assignments: 2
+  weighting-function: CPU

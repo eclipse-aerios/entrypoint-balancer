@@ -1,0 +1,15 @@
+[
+  {
+    "id": "urn:ngsi-ld:Service:03:Component:03",
+    "type": "ServiceComponent",
+    "infrastructureElement": "urn:ngsi-ld:InfrastructureElement:02",
+    "service": "urn:ngsi-ld:Service:03",
+    "serviceComponentStatus": "urn:ngsi-ld:ServiceComponentStatus:Starting",
+    "infrastructureElementRequirements": "urn:ngsi-ld:Service:03:Component:03:InfrastructureElementRequirements",
+    "sla": [],
+    "containerImage": "fiware/orion-ld:1.5.1",
+    "cliArgs": [],
+    "envVars": [],
+    "networkPorts": []
+  }
+]

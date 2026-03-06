@@ -1,0 +1,41 @@
+nameOverride: ""
+fullnameOverride: ""
+chartNodeSelector: {}
+
+api:
+  tier: internal
+  replicaCount: 1
+
+  # Configuration of the image
+  image:
+    repository: eclipseaerios/entrypoint-balancer
+    tag: ""
+    pullPolicy: IfNotPresent
+
+  # Configuration of the service
+  service:
+    type: NodePort
+    ports:
+      api:
+        port: 8080
+        targetPort: 8080
+        containerPort: 8080
+        nodePort: ""
+        protocol: TCP
+
+  # Configuration of resources and used policies
+  resources: { }
+  autoscaling:
+    enabled: false
+  nodeSelector: { }
+  tolerations: [ ]
+  affinity: { }
+
+  # Configuration of the context
+  podSecurityContext: { }
+  securityContext: { }
+
+  # Environmental variables
+  envVars:
+    logLevel: DEBUG
+    securityLogLevel: DEBUG

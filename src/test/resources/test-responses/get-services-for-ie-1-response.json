@@ -1,0 +1,43 @@
+[
+  {
+    "id": "urn:ngsi-ld:Service:01:Component:01",
+    "type": "ServiceComponent",
+    "infrastructureElement": "urn:ngsi-ld:InfrastructureElement:01",
+    "service": "urn:ngsi-ld:Service:01",
+    "serviceComponentStatus": "urn:ngsi-ld:ServiceComponentStatus:Starting",
+    "infrastructureElementRequirements": "urn:ngsi-ld:Service:01:Component:01:InfrastructureElementRequirements",
+    "sla": [
+      {
+        "key": "periodicity",
+        "value": 5
+      }
+    ],
+    "containerImage": "fiware/orion-ld:1.5.1",
+    "cliArgs": [],
+    "envVars": [
+      {
+        "key": "BROKER_ID",
+        "value": "Domain01"
+      }
+    ],
+    "networkPorts": ["urn:ngsi-ld:NetworkPort:01", "urn:ngsi-ld:NetworkPort:02"]
+  },
+  {
+    "id": "urn:ngsi-ld:Service:02:Component:02",
+    "type": "ServiceComponent",
+    "infrastructureElement": "urn:ngsi-ld:InfrastructureElement:01",
+    "service": "urn:ngsi-ld:Service:02",
+    "serviceComponentStatus": "urn:ngsi-ld:ServiceComponentStatus:Starting",
+    "infrastructureElementRequirements": "urn:ngsi-ld:Service:02:Component:02:InfrastructureElementRequirements",
+    "sla": [
+      {
+        "key": "deadline",
+        "value": 10
+      }
+    ],
+    "containerImage": "fiware/orion-ld:1.5.1",
+    "cliArgs": [],
+    "envVars": [],
+    "networkPorts": ["urn:ngsi-ld:NetworkPort:01"]
+  }
+]

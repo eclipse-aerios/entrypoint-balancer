@@ -1,0 +1,74 @@
+[
+  {
+    "id": "urn:ngsi-ld:InfrastructureElement:01",
+    "type": "InfrastructureElement",
+    "domain": "urn:ngsi-ld:Domain:01",
+    "cpuCores": 10,
+    "currentCpuUsage": 20,
+    "ramCapacity": 8192,
+    "availableRam": 5100,
+    "currentRamUsage": 3092,
+    "avgPowerConsumption": 100,
+    "currentPowerConsumption": 95,
+    "realTimeCapable": true,
+    "cpuArchitecture": "urn:ngsi-ld:CpuArchitecture:x64",
+    "operatingSystem": "urn:ngsi-ld:OperatingSystem:Linux",
+    "infrastructureElementTier": "urn:ngsi-ld:InfrastructureElementTier:Edge",
+    "infrastructureElementStatus": "urn:ngsi-ld:InfrastructureElementStatus:Ready",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        0.3,
+        0.4
+      ]
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:InfrastructureElement:02",
+    "type": "InfrastructureElement",
+    "domain": "urn:ngsi-ld:Domain:02",
+    "cpuCores": 20,
+    "currentCpuUsage": 70,
+    "ramCapacity": 9000,
+    "availableRam": 3000,
+    "currentRamUsage": 6000,
+    "avgPowerConsumption": 100,
+    "currentPowerConsumption": 90,
+    "realTimeCapable": false,
+    "cpuArchitecture": "urn:ngsi-ld:CpuArchitecture:x64",
+    "operatingSystem": "urn:ngsi-ld:OperatingSystem:Linux",
+    "infrastructureElementTier": "urn:ngsi-ld:InfrastructureElementTier:Edge",
+    "infrastructureElementStatus": "urn:ngsi-ld:InfrastructureElementStatus:Ready",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        0.3,
+        0.4
+      ]
+    }
+  },
+  {
+    "id": "urn:ngsi-ld:InfrastructureElement:03",
+    "type": "InfrastructureElement",
+    "domain": "urn:ngsi-ld:Domain:02",
+    "cpuCores": 30,
+    "currentCpuUsage": 50,
+    "ramCapacity": 10000,
+    "availableRam": 5000,
+    "currentRamUsage": 5000,
+    "avgPowerConsumption": 50,
+    "currentPowerConsumption": 40,
+    "realTimeCapable": true,
+    "cpuArchitecture": "urn:ngsi-ld:CpuArchitecture:x64",
+    "operatingSystem": "urn:ngsi-ld:OperatingSystem:Linux",
+    "infrastructureElementTier": "urn:ngsi-ld:InfrastructureElementTier:Edge",
+    "infrastructureElementStatus": "urn:ngsi-ld:InfrastructureElementStatus:Ready",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        0.3,
+        0.4
+      ]
+    }
+  }
+]

@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          orion-ld:
+            url: "http://localhost:80"
+            connect-timeout: 20000
+            read-timeout: 20000
+            logger-level: basic
+          hlo-fe:
+            url: "http://localhost:81"
+            connect-timeout: 10000
+            read-timeout: 10000
+            logger-level: basic
+
+load-balancer:
+  max-assignments: 2
+  weighting-function: CPU
