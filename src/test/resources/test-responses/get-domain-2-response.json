@@ -2,7 +2,7 @@
   "id": "urn:ngsi-ld:Domain:02",
   "type": "Domain",
   "description": "test domain rest 2",
-  "publicUrl": "http://localhost:81",
+  "publicUrl": "http://localhost:8181",
   "owner": [
     "testOwner"
   ],

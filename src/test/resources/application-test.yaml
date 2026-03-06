@@ -4,12 +4,12 @@ spring:
       client:
         config:
           orion-ld:
-            url: "http://localhost:80"
+            url: "http://localhost:8089"
             connect-timeout: 20000
             read-timeout: 20000
             logger-level: basic
           hlo-fe:
-            url: "http://localhost:81"
+            url: "http://localhost:8181"
             connect-timeout: 10000
             read-timeout: 10000
             logger-level: basic

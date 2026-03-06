@@ -24,8 +24,7 @@ public class ServiceFixtures {
 	public static final String TOSCA = """
 			tosca_definitions_version: tosca_simple_yaml_1_3
 			   
-			description: >
-			    Test description.
+			description: Test description.
 			   
 			node_templates:
 			  simple_application:
@@ -36,7 +35,7 @@ public class ServiceFixtures {
 			            ports:
 			              exposedporttest:
 			                properties:
-			                  protocol: [udp, tcp]
+			                  protocol: [tcp]
 			                  source: 30
 			    artifacts:
 			      application_image:

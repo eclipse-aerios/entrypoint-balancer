@@ -89,7 +89,7 @@ public class EntryPointControllerTest {
 
 		result.andExpect(status().isOk())
 				.andExpect(content().string(
-						"Request was distributed successfully to HLO located in the domain http://localhost:81."));
+						"Request was distributed successfully to HLO located in the domain http://localhost:8181."));
 	}
 
 	@Test
@@ -107,7 +107,7 @@ public class EntryPointControllerTest {
 		result.andExpect(status().isBadRequest())
 				.andExpect(content().string(
 						"Could not initialize service in HLO. Root cause: "
-						+ "[400 Bad Request] during [POST] to [http://localhost:81/hlo_fe/services/1] [HLOClient#passToscaToHLO(URI,String,String)]: "
+						+ "[400 Bad Request] during [POST] to [http://localhost:8181/hlo_fe/services/1] [HLOClient#passToscaToHLO(URI,String,String)]: "
 						+ "[invalid service parameters]."));
 	}
 
@@ -136,7 +136,7 @@ public class EntryPointControllerTest {
 
 		result.andExpect(status().isOk())
 				.andExpect(content().string(
-						"Service Id was distributed successfully to HLO located in the domain http://localhost:81."));
+						"Service Id was distributed successfully to HLO located in the domain http://localhost:8181."));
 	}
 
 	@Test
@@ -152,7 +152,7 @@ public class EntryPointControllerTest {
 		result.andExpect(status().isBadRequest())
 				.andExpect(content().string(
 						"Could not initialize service in HLO. Root cause: "
-						+ "[400 Bad Request] during [PUT] to [http://localhost:81/hlo_fe/services/1] [HLOClient#passServiceIdToHLO(URI,String)]: "
+						+ "[400 Bad Request] during [PUT] to [http://localhost:8181/hlo_fe/services/1] [HLOClient#passServiceIdToHLO(URI,String)]: "
 						+ "[invalid service parameters]."));
 	}
 

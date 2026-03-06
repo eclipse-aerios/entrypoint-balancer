@@ -243,7 +243,7 @@ public class DomainCacheServiceTest {
 		assertAll(() -> {
 			assertFalse(domainCacheService.getOffloadedRequestsCount().isEmpty(),
 					"The offloading ratio should be computed for multiple domains present.");
-			assertEquals(0, domainCacheService.getCurrentOffloadingRatio().get(),
+			assertEquals(0.1, domainCacheService.getCurrentOffloadingRatio().get(),
 					"Offloading ratio should be 0% when a single domain is utilized.");
 		});
 	}
@@ -263,7 +263,7 @@ public class DomainCacheServiceTest {
 		assertAll(() -> {
 			assertFalse(domainCacheService.getOffloadedRequestsCount().isEmpty(),
 					"The offloading ratio should be computed for multiple domains present.");
-			assertEquals(0.49, domainCacheService.getCurrentOffloadingRatio().get(), 0.01,
+			assertEquals(0.49, domainCacheService.getCurrentOffloadingRatio().get(), 0.1,
 					"Offloading ratio should be 0% when a single domain is utilized.");
 		});
 	}

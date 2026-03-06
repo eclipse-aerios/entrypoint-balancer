@@ -14,11 +14,11 @@ public class WireMockConfig {
 
 	@Bean(initMethod = "start", destroyMethod = "stop")
 	public WireMockServer mockOrion() {
-		return new WireMockServer(options().port(80));
+		return new WireMockServer(options().port(8089));
 	}
 
 	@Bean(initMethod = "start", destroyMethod = "stop")
 	public WireMockServer mockHLO() {
-		return new WireMockServer(options().port(81));
+		return new WireMockServer(options().port(8181));
 	}
 }
